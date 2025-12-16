@@ -1,0 +1,42 @@
+[project]
+name = "simple-extraction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "transformers>=4.52.4",
+    "open-clip-torch>=2.31.0",
+    "rich>=13.9.4",
+    "tensorboard>=2.19.0",
+    "torch-tb-profiler>=0.4.3",
+    "torch>=2.6.0",
+    "tqdm>=4.67.1",
+    "transformers>=4.49.0",
+    "scipy>=1.15.2",
+    "ipython>=9.0.2",
+    "jupyterlab>=4.3.6",
+    "plotly>=6.0.1",
+    "streamlit>=1.44.0",
+    "iprogress>=0.4",
+    "datasets>=3.5.0",
+    "statsmodels>=0.14.4",
+    "cvxpy>=1.6.4",
+    "scikit-learn>=1.6.1",
+    "model2vec>=0.4.1",
+    "holoviews>=1.20.2",
+    "selenium>=4.31.0",
+    "scikit-image>=0.25.2",
+    "pyqt5>=5.15.11",
+    "accelerate>=1.7.0",
+    "matplotlib>=3.10.3",
+    "torchmetrics>=1.7.3",
+    "scikit-network>=0.33.3",
+    "networkx>=3.5",
+    "heapdict>=1.0.1",
+    "prince>=0.16.0",
+    "standard-imghdr>=3.13.0",
+    "soundfile>=0.13.1",
+    "numba>=0.61.2",
+    "librosa>=0.11.0",
+]
