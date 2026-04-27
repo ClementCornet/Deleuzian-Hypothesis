@@ -12,11 +12,22 @@ uv sync
 source .venv/bin/activate
 ```
 
-## Usage
+## Example Usage
 
-To use probe loss evaluation to assess whether extracted concepts retain the desired attributes : 
+To extract concepts from precomputed activation matrices : 
 
-```bash
-python eval_features.py --model ClipVision --method large_diffs --dataset ImNet
+```python
+from extraction import memsafediffs
+# Learn concepts from neural activations
+acts = torch.load('prerecorded_activations.pt')
+deleuzian_proj = memsafediffs(acts, n_dims=1000)
+# Apply to new activations
+new_acts = torch.load('any_activations.pt')
+deleuzian_concepts = deleuzian_proj(new_acts)
 ```
 
+Utilities:
+- `wrappedmodels.py` to hook a model
+- `record_acts.py` for activations recording from a model
+- `probes.py` to measure probe loss (concept quality, with respect to dataset labels)
+- `mppc.py` to measure concept consistency with MPPC
